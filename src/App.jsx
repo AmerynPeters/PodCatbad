@@ -111,9 +111,9 @@ export default function App() {
   /** 
    * Render the App component with conditional rendering based on the current page
    */
-  return (
-    <>
-    {/* <switch> */}
+ return (
+    <> 
+  {/* <switch> */}
    { isAuthenticated === false ?  <Authentication
      email={email}
      setEmail={setEmail}
@@ -130,13 +130,15 @@ export default function App() {
         <Home onPodcastClick={setSelectedPodcast} selectedPodcast={selectedPodcast} />
         {/* <Route path="/Home" exact component={Home} /> */}
         </>
-      )}
+      )};
+
       {currentPage === 'favorite' && (
         <>
           <Favorite favorites={favorites} setFavorites={setFavorites} />
           {/* <Route path="/Favorite" component={Favorite} /> */}
         </>
-      )}
+      )};
+
       {currentPage === 'preview' && (
         <ShowPodcast
           podcastId={selectedPodcast?.id}
@@ -144,12 +146,11 @@ export default function App() {
           onEpisodeComplete={handleEpisodeComplete}
           onEpisodeProgress={handleEpisodeProgress}
         />
-      )}
+      )};
+
       {currentPage === 'history' && <History />}
       {/* <Route path="/History" component={History} /> */}
       <SocialMediaLinks />
      </>}
      {/* </switch> */}
-    </>
-  );
-}
+}</>)};
