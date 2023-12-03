@@ -1,6 +1,7 @@
 /** 
  *  Social Media Icons and links
  */
+import React from "react";
 export default function SocialMediaLinks() {
      
     return (

@@ -1,7 +1,8 @@
+import React from "react";
 export default function Footer() {
-    return(
+    return (
         <footer>
             <small>Copyright © TaylorMade Sound</small>
         </footer>
-    )
+    );
 }

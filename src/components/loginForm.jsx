@@ -1,5 +1,6 @@
 /** Creating a login system typically involves server-side logic for authentication, 
  * and JavaScript prototypes are more commonly associated with client-side logic */
+import React from "react";
 import PropTypes from 'prop-types'
 /**The propTypes property is used to define the type of each prop. In this example, 
  * the name prop is required and must be a string */

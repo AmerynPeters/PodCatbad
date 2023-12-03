@@ -3,6 +3,7 @@
  * initialization and management of the Supabase client instance. This can make your code more 
  * modular and easier to maintain
  */
+import React from "react";
 import { supabase } from './services/supabase.jsx';
 
 /** 

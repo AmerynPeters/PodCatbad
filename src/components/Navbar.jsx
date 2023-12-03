@@ -3,6 +3,7 @@
  * Users can easily switch between the Home, Favorites, Preview, and History pages.
  * It helps users quickly access different functionalities without navigating through complex menus.
  */
+import React from "react";
 import PropTypes from 'prop-types';
 
 /** 
