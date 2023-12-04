@@ -43,14 +43,13 @@
   margin-top: 2rem;
 }
 .main-heading {
-  font-family: 'Dancing Script', 'cursive';
+  font-family: Georgia, serif;
   color: #7e3571;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   line-height: 1.2;
   font-size: 3vw;
   text-align: center;
-  box-shadow: 4rem 1rem 7px rgba(0, 0, 0, 0.2);
 }
 span {
   display: block;
@@ -198,7 +197,7 @@ select {
 }
 .favorite--items {
   width:20%;
-  background-color: white;
+  background-color: rgb(248, 246, 246);
 }
 .genres--container {
   position: relative; 
@@ -207,19 +206,8 @@ select {
 .loading--text {
   padding-top: 5rem;
   font-weight: bold;
-}
+};
 
-/* -------------------------------------------- SOCIAL MEDIA ICONS -------------------------------------------- */
-.socialMediaLinks--Icons{
-  display: flex;
-  padding: 0.5rem;
-  background: linear-gradient(90deg, #060a0d 12%, #7e3a76 100%);
-}
-.icon--image {
-  max-width: 6%;
-  margin: auto ;
-}
-/* -------------------------------------------- FOOTER -------------------------------------------- */
 footer {
   background: linear-gradient(90deg, #060a0d 12%, #7e3a76 100%);
   color: white;
@@ -237,5 +225,4 @@ footer {
   .showPodcast--container {
     margin: 5rem;
   }
-}
-/* ------------------------------------------- END OF COMPONENTS STYLE ------------------------------------------- */
+};
