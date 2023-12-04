@@ -113,30 +113,7 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
             return new Date(b.updated) - new Date(a.updated);
         }
     });
-    /**
-     * HandleFavoriteClick
-     */
-    // const FavoriteComponent = () => {
-    //   const [isFavorite, setIsFavorite] = useState(false);
-    //   const [iconSrc, setIconSrc] = useState(nonFavoriteIcon);
 
-    //   const handleFavoriteClick = () => {
-    //     setIsFavorite(!isFavorite);
-    //     setIconSrc(isFavorite ? nonFavoriteIcon : favoriteIcon);
-    //   };
-    // }
-
-    /**
-     * Carousel array
-     */
-    // const podcastIds = [{podcast.id}];
-    /**
-     *  Render the Home component
-     *  Display HTML format along with JavaScript syntax
-     *  Form Input
-     *  Selective dropdown
-     *  Option to select genre
-     */
     return (
         <div className="home-container">
             <h1>All Shows</h1>
