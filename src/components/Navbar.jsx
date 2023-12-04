@@ -1,13 +1,12 @@
 /**
- * This component provides navigation buttons for different sections of the app.
- * Users can easily switch between the Home, Favorites, Preview, and History pages.
- * It helps users quickly access different functionalities without navigating through complex menus.
+ * Nav buttons for different sections of the app.
+ * Switch between the Home, Favorites, Preview, and History pages.
  */
 import React from "react";
 import PropTypes from 'prop-types';
 
 /** 
- * Define the Navbar component
+ *  Navbar 
  */
 const Navbar = ({ onNavigate }) => {
   /**
@@ -21,7 +20,7 @@ const Navbar = ({ onNavigate }) => {
   };
 
   /** 
-   * Render the Navbar component
+   * Render Navbar 
    */
   return (
     <div className="navbar-container">
