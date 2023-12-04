@@ -204,11 +204,7 @@ select {
   font-weight: bold;
 };
 
-footer {
-  background: linear-gradient(90deg, #060a0d 12%, #7e3a76 100%);
-  color: white;
-  padding: 0.5rem 1rem;
-}
+
 /* LoginForm */
 .main-heading {
   color: white;

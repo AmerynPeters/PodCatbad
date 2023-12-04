@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import PropTypes from "prop-types";
 import About from "./About";
-import Footer from "./Footer";
+
 // import favoriteIcon from '../assets/filledStar.png';
 import nonFavoriteIcon from "../assets/star.png";
 // import PodcastCarousel from './PodcastCarousel'
@@ -200,7 +200,7 @@ const Home = ({ onPodcastClicks, selectedPodcast }) => {
                     ))}
                 </ul>
             )}
-            <Footer />
+          
         </div>
     );
 };
@@ -214,8 +214,4 @@ Home.propTypes = {
 };
 
 export default Home;
-/**
- * Displays a list of podcasts available to explore.
- * Users can click on a podcast to view more details.
- * Offers search and sorting options to find podcasts easily.
- */
+
