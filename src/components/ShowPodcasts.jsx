@@ -5,9 +5,7 @@ import PropTypes from "prop-types";
 // import { Link } from 'react-router-dom';
 import PreviousButton from "../assets/previous.png";
 
-/**
- * Define the showPodcast component
- */
+
 const ShowPodcast = ({
     podcastId,
     onFavoriteClick,
@@ -15,7 +13,7 @@ const ShowPodcast = ({
     onEpisodeProgress,
 }) => {
     /**
-     * State variables
+     * create variables
      */
     const [podcast, setPodcast] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -52,7 +50,7 @@ const ShowPodcast = ({
     }
 
     /**
-     * Handle favorite button click
+     * favorite button 
      */
     const handleFavoriteClick = () => {
         if (podcast) {
@@ -61,14 +59,14 @@ const ShowPodcast = ({
     };
 
     /**
-     * Handle progress update of an episode
+     * time to update an episode
      */
     const handleEpisodeMovement = (currentTime) => {
         onEpisodeProgress(podcast, currentTime);
     };
 
     /**
-     * Handle completion of an episode
+     * wjen user completes an episode
      */
     const handleEpisodeComplete = () => {
         onEpisodeComplete(podcast);

@@ -37,18 +37,6 @@ const History = () => {
   useEffect(() => {
     localStorage.setItem('lastListened', JSON.stringify(lastListened));
 
- /** 
-  * Create a timer to add to history after 10 minutes of no activity
-  * 
-  * This callback function checks if certain conditions are met before updating the listening history.
-  * 
-  * If the conditions are met, it uses the setListeningHistory function to update the listening history state. 
-  * It creates a new array with the previous history (prevHistory) and adds a new object representing the 
-  * latest listened item.
-  * 
-  * The new object includes the show, episode, progress, and a timestamp representing the current date and 
-  * time in ISO format
- */
  const timer = setTimeout(() => {
   if (lastListened.show && lastListened.episode && lastListened.progress) {
     setListeningHistory((prevHistory) => [

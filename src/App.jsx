@@ -7,9 +7,9 @@ import { useEffect, useState } from 'react';
 // import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Favorite from './components/Favorite';
-import ShowPodcast from './components/ShowPodcast';
+import Home from './components/homePage';
+import Favorite from './components/favourite';
+import ShowPodcast from './components/ShowPodcasts';
 import History from './components/History';
 import Authentication from './components/loginForm';
 import SocialMediaLinks from './components/SocialMediaLinks';
@@ -122,9 +122,9 @@ export default function App() {
      isAuthenticated={isAuthenticated}
      setIsAuthenticated={setIsAuthenticated}
      /> : <>
-     <Navbar onNavigate={handleNavigation} />
+     <Navbar onNavClick={handleNavigation} />
       <br />
-      <br />
+      
       {currentPage === 'home' && (
         <>
         <Home onPodcastClick={setSelectedPodcast} selectedPodcast={selectedPodcast} />
