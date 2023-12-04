@@ -61,7 +61,7 @@ const Favorite = ({ favorites, setFavorites }) => {
         });
 
     /**
-     * Renders Favorite component
+     * Render the Favorite component
      */
 
     return (

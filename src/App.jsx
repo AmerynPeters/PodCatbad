@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/homePage';
-import Favorite from './components/favourite';
+import Favorite from './components/Favourites';
 import ShowPodcast from './components/ShowPodcasts';
 import History from './components/History';
 import Authentication from './components/loginForm';
