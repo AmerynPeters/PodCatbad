@@ -179,19 +179,15 @@ select {
   align-items: center;
   margin-bottom: 20px;
   border: 1px solid #7e3571;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Initial shadow (gray) */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
   padding: 10px;
   cursor: pointer;
-  transition: box-shadow 0.3s ease; /* Add a transition for a smooth effect */
-}
-.show--info:hover {
-  box-shadow: 2px 2px 4px black; /* Shadow when hovering (black) */
+  transition: box-shadow 0.3s ease; 
 }
 
 .show--details {
   flex: 1;
 }
-/* ------------------------------------------- FAVORITE ------------------------------------------- */
 .favorite--container{
   background-color: #00000035;
 }
