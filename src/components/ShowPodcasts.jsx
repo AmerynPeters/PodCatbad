@@ -37,9 +37,7 @@ const ShowPodcast = ({
         }
     }, [podcastId]);
 
-    /**
-     *  Render different UI based on loading and podcast data
-     */
+
     if (loading) {
         return <p className="loading--text">Loading...</p>;
     }
