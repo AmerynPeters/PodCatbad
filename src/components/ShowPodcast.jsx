@@ -43,11 +43,12 @@ const ShowPodcast = ({
      *  Render different UI based on loading and podcast data
      */
     if (loading) {
-        return <p className="loading--text">Loading Selected Podcast...</p>;
+        return <p className="loading--text">Loading...</p>;
     }
 
     if (!podcast) {
-        return <p>No data found for this podcast.</p>;
+        // eslint-disable-next-line react/no-unescaped-entities
+        return <p>Oops! There's been a problem on our side. </p>;
     }
 
     /**
